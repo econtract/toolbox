@@ -24,7 +24,7 @@ Next, you will need to add several values to your `.env` file:
 
 ```
 
-    TOOLBOX_URL=http://toolbox.econtract.be/        // Toolbox API key URL that is to be used
+    TOOLBOX_URL=https://toolbox.econtract.be        // Toolbox API key URL that is to be used
     TOOLBOX_KEY=your_toolbox_key                    // Toolbox API key that will authenticate you in our system.
 
 ```

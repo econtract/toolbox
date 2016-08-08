@@ -34,11 +34,11 @@ class ToolboxService {
      */
     protected function send($url, $data = array())
     {
-//        $data[ 'toolbox_key' ] = $_SERVER[ 'TOOLBOX_KEY' ];
+        $data[ 'toolbox_key' ] = $_SERVER[ 'TOOLBOX_KEY' ];
 
         try {
             $response = $this->getCurlService()
-                ->to( $this->baseUrl . $url )
+                ->to( $this->baseUrl .'/'. $url )
                 ->withData( $data )
                 ->asJson()
                 ->get();

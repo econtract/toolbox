@@ -1,7 +1,7 @@
 {
     "name": "econtract/toolbox",
     "description": "E-Contract BVBA toolbox API package",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": ["API", "E-Contract", "Aanbieders"],
     "homepage": "http://aanbieders.be",
     "license": "proprietary",
@@ -20,7 +20,6 @@
     "require": {
         "php": ">=5.6.0",
         "illuminate/support": "~5.1",
-        "everto/aanbieders-api-client": "~0.3",
         "ixudra/curl": "~6.0",
         "vlucas/phpdotenv": "~1.0"
     },
