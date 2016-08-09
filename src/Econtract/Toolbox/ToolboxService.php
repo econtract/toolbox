@@ -22,7 +22,7 @@ class ToolboxService {
 
     public function __construct()
     {
-        $this->baseUrl = $_SERVER[ 'TOOLBOX_URL' ];
+        $this->baseUrl = $_SERVER[ 'TOOLBOX_API_ENDPOINT' ];
     }
 
 
@@ -34,7 +34,7 @@ class ToolboxService {
      */
     protected function send($url, $data = array())
     {
-        $data[ 'toolbox_key' ] = $_SERVER[ 'TOOLBOX_KEY' ];
+        $data[ 'toolbox_key' ] = $_SERVER[ 'TOOLBOX_API_KEY' ];
 
         try {
             $response = $this->getCurlService()
