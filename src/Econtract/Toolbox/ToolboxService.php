@@ -12,7 +12,7 @@ use Exception;
 
 class ToolboxService {
 
-    use AddressTrait, CityTrait, ConnectionTrait, StreetTrait;
+    use AddressTrait, CityTrait, ConnectionTrait, StreetTrait, VerificationTrait;
 
     protected $baseUrl;
 
