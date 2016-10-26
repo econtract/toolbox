@@ -1,7 +1,7 @@
 {
     "name": "econtract/toolbox",
     "description": "E-Contract BVBA toolbox API package",
-    "version": "1.0.2",
+    "version": "2.0.0",
     "keywords": ["API", "E-Contract", "Aanbieders"],
     "homepage": "http://aanbieders.be",
     "license": "proprietary",
