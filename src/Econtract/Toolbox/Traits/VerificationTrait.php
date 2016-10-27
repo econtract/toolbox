@@ -14,7 +14,9 @@ trait VerificationTrait
      */
     public function verify($type, $data, array $context = [])
     {
-        return $this->send('verify/' . $type . ($data ? '/' . urlencode($data) : ''), $context);
+        $context['input'] = $data;
+
+        return $this->send('verify/' . $type, $context);
     }
 
 }
