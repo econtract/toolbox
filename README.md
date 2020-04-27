@@ -129,9 +129,9 @@ This package is proprietary software and may not be copied or redistributed with
 
 ## Contact
 
-Evert Engelen (owner)
+Charles Dekkers (owner)
 
-- Email: evert@aanbieders.be
+- Email: charles@aanbieders.be
 
 
 Jan Oris (developer)

@@ -1,5 +1,6 @@
 <?php namespace Econtract\Toolbox;
 
+
 use Econtract\Toolbox\Exceptions\ToolboxException;
 use Econtract\Toolbox\Traits\AddressTrait;
 use Econtract\Toolbox\Traits\CityTrait;
@@ -14,17 +15,23 @@ class ToolboxService {
 
     use AddressTrait, CityTrait, ConnectionTrait, StreetTrait, VerificationTrait;
 
+
+    /** @var string */
     protected $baseUrl;
 
+    /** @var string */
     protected $apiKey;
 
+    /** @var CurlService */
     protected $curlService;
+
 
     public function __construct($baseUrl, $apiKey)
     {
         $this->baseUrl = $baseUrl;
         $this->apiKey  = $apiKey;
     }
+
 
     /**
      * @param   string $url
@@ -37,6 +44,7 @@ class ToolboxService {
         $data[ 'toolbox_key' ] = $this->apiKey;
 
         try {
+            /** @var \stdClass $response */
             $response = $this->getCurlService()
                 ->to($this->baseUrl .'/'. $url)
                 ->withData($data)
