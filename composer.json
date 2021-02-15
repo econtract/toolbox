@@ -1,8 +1,8 @@
 {
     "name": "econtract/toolbox",
     "description": "E-Contract BVBA toolbox API package",
-    "version": "2.0.3",
-    "keywords": ["API", "E-Contract", "Aanbieders"],
+    "version": "2.1.0",
+    "keywords": ["API", "E-Contract", "Aanbieders", "Toolbox"],
     "homepage": "http://aanbieders.be",
     "license": "proprietary",
 
@@ -20,14 +20,20 @@
         "vlucas/phpdotenv": "~2.0"
     },
 
-    "require-dev": {
-        "phpunit/phpunit" : "~4.6",
-        "mockery/mockery": "~0.9"
+    "autoload": {
+        "psr-4": {
+            "Econtract\\Toolbox\\": "src/"
+        }
     },
 
-    "autoload": {
-        "psr-0": {
-            "Econtract\\Toolbox\\": "src/"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Econtract\\Toolbox\\ToolboxServiceProvider"
+            ],
+            "aliases": {
+                "Toolbox": "Econtract\\Toolbox\\Facades\\Toolbox"
+            }
         }
     },
 

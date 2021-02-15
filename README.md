@@ -43,7 +43,7 @@ Add the service provider to your `config/app.php` file:
         //...
         \Econtract\Toolbox\ToolboxServiceProvider::class,
 
-    )
+    ),
 
 ```
 
