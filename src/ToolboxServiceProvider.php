@@ -13,9 +13,8 @@ class ToolboxServiceProvider extends ServiceProvider {
     {
         $this->app->singleton(
             ToolboxService::class,
-            function($app)
-            {
-                return new ToolboxService($_SERVER[ 'TOOLBOX_API_ENDPOINT' ], $_SERVER['TOOLBOX_API_KEY']);
+            function($app) {
+                return new ToolboxService( $_SERVER[ 'TOOLBOX_API_ENDPOINT' ], $_SERVER[ 'TOOLBOX_API_KEY' ] );
             }
         );
 

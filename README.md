@@ -14,7 +14,7 @@ Pull this package in through Composer:
 
     {
         "require": {
-            "econtract/toolbox": "2.*"
+            "econtract/toolbox": "3.*"
         }
     }
 

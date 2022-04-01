@@ -1,9 +1,9 @@
 {
     "name": "econtract/toolbox",
     "description": "E-Contract BVBA toolbox API package",
-    "version": "2.1.0",
+    "version": "3.0.0",
     "keywords": ["API", "E-Contract", "Aanbieders", "Toolbox"],
-    "homepage": "http://aanbieders.be",
+    "homepage": "https://aanbieders.be",
     "license": "proprietary",
 
     "authors": [
@@ -14,10 +14,10 @@
     ],
 
     "require": {
-        "php": ">=5.6.0",
-        "illuminate/support": "~5.1",
+        "php": "^7.2|^8.0",
+        "illuminate/support": ">=6.0",
         "ixudra/curl": "~6.0",
-        "vlucas/phpdotenv": "~2.0"
+        "vlucas/phpdotenv": "^5.2"
     },
 
     "autoload": {
